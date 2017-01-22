@@ -1,12 +1,12 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ff5a37",
     "navigationBarTitleText": "小程序初体验",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   }
 }
