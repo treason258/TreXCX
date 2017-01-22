@@ -1,6 +1,8 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/main/index",
+    "pages/main/user",
+    "pages/main/tools",
     "pages/logs/logs"
   ],
   "window": {
@@ -8,5 +10,26 @@
     "navigationBarBackgroundColor": "#ff5a37",
     "navigationBarTitleText": "小程序初体验",
     "navigationBarTextStyle": "white"
-  }
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/main/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/main/tools",
+        "text": "工具"
+      },
+      {
+        "pagePath": "pages/main/user",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
 }

@@ -1,0 +1,5 @@
+/**index.wxss**/
+
+.hi {
+  margin-top: 200px;
+}

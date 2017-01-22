@@ -1,19 +1,16 @@
-//logs.js
-var TAG = 'logs.js'
+//index.js
+var TAG = 'index.js'
 //获取应用实例
 var app = getApp()
-var util = require('../../utils/util.js')
 Page({
   data: {
-    logs: []
+    hi: '欢迎来到TreXCX-小程序初体验！'
   },
   onLoad: function (options) {
     console.log(TAG + ' | onLoad | options -> ' + options)
-    this.setData({
-      logs: (wx.getStorageSync('logs') || []).map(function (log) {
-        return util.formatTime(new Date(log))
-      })
-    })
+    //调用应用实例的方法获取全局数据
+    console.log(TAG + ' | app.getUserInfo()')
+    app.getUserInfo()
   },
   onReady: function () {
     console.log(TAG + ' | onReady')
@@ -36,4 +33,7 @@ Page({
   onShareAppMessage: function () {
     console.log(TAG + ' | onShareAppMessage')
   },
+  customData: {
+    hello: 'Helo index.js!'
+  }
 })
