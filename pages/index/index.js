@@ -3,7 +3,7 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
+    motto: '欢迎来到TreXCX-小程序初体验！',
     userInfo: {}
   },
   //事件处理函数
