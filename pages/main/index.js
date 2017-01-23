@@ -3,9 +3,7 @@ var TAG = 'index.js'
 //获取应用实例
 var app = getApp()
 Page({
-  data: {
-    hi: '欢迎来到TreXCX-小程序初体验！'
-  },
+  //生命周期
   onLoad: function (options) {
     console.log(TAG + ' | onLoad | options -> ' + options)
     //调用应用实例的方法获取全局数据
@@ -33,7 +31,23 @@ Page({
   onShareAppMessage: function () {
     console.log(TAG + ' | onShareAppMessage')
   },
+  //变量
+  data: {
+    hi: '欢迎来到TreXCX-小程序初体验！'
+  },
   customData: {
     hello: 'Helo index.js!'
-  }
+  },
+  //跳转到新闻头条页面
+  gotoToutiao: function () {
+    wx.navigateTo({
+      url: '../index/toutiao'
+    })
+  },
+  //跳转到微信精选页面
+  gotoWeixin: function () {
+    wx.navigateTo({
+      url: '../index/weixin'
+    })
+  },
 })

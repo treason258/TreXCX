@@ -1,7 +1,9 @@
 
 <!--index.wxml-->
-<view class="container">
+<view>
   <view class="hi">
     <text>{{hi}}</text>
   </view>
+  <button bindtap="gotoToutiao" class="item">新闻头条</button>
+  <button bindtap="gotoWeixin" class="item">微信精选</button>
 </view>

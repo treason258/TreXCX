@@ -1,5 +1,9 @@
 /**index.wxss**/
 
 .hi {
-  margin-top: 200px;
+  margin: 10px;
+}
+
+.item {
+  margin: 10px;
 }

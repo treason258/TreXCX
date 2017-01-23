@@ -3,10 +3,7 @@ var TAG = 'user.js'
 //获取应用实例
 var app = getApp()
 Page({
-    data: {
-        hi: '好好学习，天天向上！！！！！！',
-        userInfo: null
-    },
+    //生命周期
     onLoad: function (options) {
         console.log(TAG + ' | onLoad | options -> ' + options)
         //调用应用实例的方法获取全局数据
@@ -45,13 +42,18 @@ Page({
             path: '/page/user?id=123'
         }
     },
-    //事件处理函数
+    //变量
+    data: {
+        hi: '好好学习，天天向上！！！！！！',
+        userInfo: null
+    },
+    customData: {
+        hello: 'Hello user.js!'
+    },
+    //跳转到日志页面
     bindViewTap: function () {
         wx.navigateTo({
             url: '../logs/logs'
         })
     },
-    customData: {
-        hello: 'Hello user.js!'
-    }
 })

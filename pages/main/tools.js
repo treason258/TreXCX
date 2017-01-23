@@ -3,6 +3,35 @@ var TAG = 'tools.js'
 //获取应用实例
 var app = getApp()
 Page({
+    //生命周期
+    onLoad: function (options) {
+        console.log(TAG + ' | onLoad | options -> ' + options)
+    },
+    onReady: function () {
+        console.log(TAG + ' | onReady')
+    },
+    onShow: function () {
+        console.log(TAG + ' | onShow')
+    },
+    onHide: function () {
+        console.log(TAG + ' | onHide')
+    },
+    onUnload: function () {
+        console.log(TAG + ' | onUnload')
+    },
+    onPullDownRefresh: function () {
+        console.log(TAG + ' | onPullDownRefresh')
+    },
+    onReachBottom: function () {
+        console.log(TAG + ' | onReachBottom')
+    },
+    onShareAppMessage: function () {
+        console.log(TAG + ' | onShareAppMessage')
+    },
+    customData: {
+        hello: 'Helo tools.js!'
+    },
+    //变量
     data: {
         hi: '工具大合集！',
         list: [
@@ -42,6 +71,7 @@ Page({
             }
         ]
     },
+    //点击事件处理
     kindToggle: function (e) {
         var id = e.currentTarget.id, list = this.data.list;
         for (var i = 0, len = list.length; i < len; ++i) {
@@ -55,31 +85,4 @@ Page({
             list: list
         });
     },
-    onLoad: function (options) {
-        console.log(TAG + ' | onLoad | options -> ' + options)
-    },
-    onReady: function () {
-        console.log(TAG + ' | onReady')
-    },
-    onShow: function () {
-        console.log(TAG + ' | onShow')
-    },
-    onHide: function () {
-        console.log(TAG + ' | onHide')
-    },
-    onUnload: function () {
-        console.log(TAG + ' | onUnload')
-    },
-    onPullDownRefresh: function () {
-        console.log(TAG + ' | onPullDownRefresh')
-    },
-    onReachBottom: function () {
-        console.log(TAG + ' | onReachBottom')
-    },
-    onShareAppMessage: function () {
-        console.log(TAG + ' | onShareAppMessage')
-    },
-    customData: {
-        hello: 'Helo tools.js!'
-    }
 })

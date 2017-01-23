@@ -3,7 +3,9 @@
     "pages/main/index",
     "pages/main/user",
     "pages/main/tools",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/index/toutiao",
+    "pages/index/weixin"
   ],
   "window": {
     "backgroundTextStyle": "light",
