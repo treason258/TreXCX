@@ -1,5 +1,5 @@
-//toutiao.js
-var TAG = 'toutiao.js'
+//weixin.js
+var TAG = 'weixin.js'
 //获取应用实例
 var app = getApp()
 Page({
