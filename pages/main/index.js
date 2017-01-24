@@ -38,16 +38,22 @@ Page({
   customData: {
     hello: 'Helo index.js!'
   },
-  //跳转到新闻头条页面
+  //跳转到新闻头条
   gotoToutiao: function () {
     wx.navigateTo({
-      url: '../index/toutiao'
+      url: '../index/toutiao/index'
     })
   },
-  //跳转到微信精选页面
-  gotoWeixin: function () {
+  //跳转到豆瓣电影
+  gotoDouBanBook: function () {
     wx.navigateTo({
-      url: '../index/weixin'
+      url: '../index/douban-book/index'
+    })
+  },
+  //跳转到微信精选
+  gotoWeixinJingxuan: function () {
+    wx.navigateTo({
+      url: '../index/weixin-jingxuan/index'
     })
   },
 })

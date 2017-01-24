@@ -4,8 +4,10 @@
     "pages/main/user",
     "pages/main/tools",
     "pages/logs/logs",
-    "pages/index/toutiao",
-    "pages/index/weixin"
+    "pages/index/toutiao/index",
+    "pages/index/douban-book/index",
+    "pages/index/douban-book/detail",
+    "pages/index/weixin-jingxuan/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

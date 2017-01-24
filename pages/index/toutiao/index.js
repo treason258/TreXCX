@@ -29,6 +29,7 @@ Page({
     imgUrls: [],
     author: [],
     date: [],
+    url: [],
     requestUrl: 'top',
     cssActive: 0,
     dataId: 0,
@@ -64,6 +65,7 @@ Page({
       imgUrls: app.imgUrls,
       author: app.author,
       date: app.date,
+      url: app.url,
       requestUrl: app.requestUrl,
       page: app.page
     })
@@ -74,8 +76,9 @@ Page({
     console.log(TAG + ' | wx.request');
     wx.request({
       url: 'https://v.juhe.cn/toutiao/index?type=' + app.requestUrl + '&key=3b2f1817a3494b6f1e558f24fbf00aeb',
+      data: {},
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
-      header: {}, // 设置请求的 header
+      // header: {}, // 设置请求的 header
       success: (res) => {
         console.log(TAG + ' | wx.request -> success | res -> ' + res);
         var data = res.data.result.data;
@@ -91,6 +94,7 @@ Page({
           imgUrls: app.imgUrls,
           author: app.author,
           date: app.date,
+          url: app.url,
           page: app.page,
         })
       },
@@ -107,8 +111,8 @@ Page({
     app.title = [];
     app.imgUrls = [];
     app.author = [];
-    app.title = [];
     app.date = [];
+    app.url = [];
     app.page = 0;
   },
   loading: function () {

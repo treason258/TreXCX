@@ -1,0 +1,20 @@
+
+<!--content-->
+<scroll-view scroll-y="true" class="content" style="height: {{windowHeight}}px; width: {{windowWidth}}px;">
+
+  <!--top-->
+  <view class="newsBox top">
+    <block wx:for="{{title}}">
+      <navigator class="details">
+        <text class="title">{{title[index]}}</text>
+        <!--<view class="picBox">
+          <image src="{{imgUrls[index]}}"></image>
+        </view>-->
+        <view class="info">
+          <text class="author">{{author[index]}}</text>
+          <text class="date">{{date[index]}}</text>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</scroll-view>
