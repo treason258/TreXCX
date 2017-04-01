@@ -75,7 +75,7 @@ Page({
   getTypeData: function (page) {
     console.log(TAG + ' | wx.request');
     wx.request({
-      url: 'https://v.juhe.cn/toutiao/index?type=' + app.requestUrl + '&key=3b2f1817a3494b6f1e558f24fbf00aeb',
+      url: 'https://v.juhe.cn/toutiao/index?key=3b2f1817a3494b6f1e558f24fbf00aeb&type=' + app.requestUrl,
       data: {},
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
       // header: {}, // 设置请求的 header
