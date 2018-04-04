@@ -4,7 +4,7 @@
   <view class="hi">
     <text>{{hi}}</text>
   </view>
-  <button bindtap="gotoToutiao" class="item">新闻头条</button>
-  <button bindtap="gotoDouBanBook" class="item">豆瓣读书</button>
-  <button bindtap="gotoWeixinJingxuan" class="item">微信精选</button>
+   <button bindtap="gotoToutiao" class="item">新闻头条</button>
+   <button bindtap="gotoDouBanBook" class="item">豆瓣读书</button> 
+   <button bindtap="gotoWeixinJingxuan" class="item">微信精选</button> 
 </view>

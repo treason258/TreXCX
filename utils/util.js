@@ -1,3 +1,9 @@
+module.exports = {
+  formatTime: formatTime,
+  isFunction: isFunction,
+  parseInteger: parseInt,
+}
+
 function formatTime(date) {
   var year = date.getFullYear()
   var month = date.getMonth() + 1
@@ -23,10 +29,4 @@ function parseInteger(val) {
   if (isNaN(val))
     return 0;
   return parseInt(val);
-}
-
-module.exports = {
-  formatTime: formatTime,
-  isFunction: isFunction,
-  parseInteger: parseInt
 }

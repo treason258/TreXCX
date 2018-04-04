@@ -1,39 +1,41 @@
 //index.js
-var TAG = 'index.js'
+var common = require('../../utils/common.js');
+var tag = 'index.js'
+
 //获取应用实例
 var app = getApp()
 Page({
   //生命周期
   onLoad: function (options) {
-    console.log(TAG + ' | onLoad | options -> ' + options)
+    common.log(tag, 'onLoad | options -> ' + options)
     //调用应用实例的方法获取全局数据
-    console.log(TAG + ' | app.getUserInfo()')
+    common.log(tag, 'app.getUserInfo()')
     app.getUserInfo()
   },
   onReady: function () {
-    console.log(TAG + ' | onReady')
+    common.log(tag, 'onReady')
   },
   onShow: function () {
-    console.log(TAG + ' | onShow')
+    common.log(tag, 'onShow')
   },
   onHide: function () {
-    console.log(TAG + ' | onHide')
+    common.log(tag, 'onHide')
   },
   onUnload: function () {
-    console.log(TAG + ' | onUnload')
+    common.log(tag, 'onUnload')
   },
   onPullDownRefresh: function () {
-    console.log(TAG + ' | onPullDownRefresh')
+    common.log(tag, 'onPullDownRefresh')
   },
   onReachBottom: function () {
-    console.log(TAG + ' | onReachBottom')
+    common.log(tag, 'onReachBottom')
   },
   onShareAppMessage: function () {
-    console.log(TAG + ' | onShareAppMessage')
+    common.log(tag, 'onShareAppMessage')
   },
   //变量
   data: {
-    hi: '欢迎来到TreXCX-小程序初体验！'
+    hi: '源码会挂在Github上，旨在发扬开源精神，方便开发交流，提高开发效率。'
   },
   customData: {
     hello: 'Helo index.js!'

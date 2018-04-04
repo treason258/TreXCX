@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/main/index",
-    "pages/main/user",
     "pages/main/tools",
+    "pages/main/user",
     "pages/logs/logs",
     "pages/index/toutiao/index",
     "pages/index/douban-book/index",
@@ -12,7 +12,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ff5a37",
-    "navigationBarTitleText": "小程序初体验",
+    "navigationBarTitleText": "TRE开源计划1",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
@@ -35,5 +35,5 @@
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug": false
+  "debug": true
 }
